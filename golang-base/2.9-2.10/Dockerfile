@@ -1,4 +1,4 @@
-FROM golang:1.21.1-bullseye as builder
+FROM golang:1.21.1-bullseye AS builder
 WORKDIR /workspace
 COPY main/go.mod go.mod
 RUN go mod download
